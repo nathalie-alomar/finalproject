@@ -1,13 +1,15 @@
 My Goals for the Final Project
 
 1) Build a phylogeny of the Plethodon genus 
-In order to build the phylogeny I have collected sequences from GenBank of 10 Plethodon species. The sequences are from the NADH dehydrogenase subunit 2 (ND2) gene. I have had a difficult time finding and downloading different species since depending on the gene it depends on how many sequences have been done on multiple species. I am aiming prioritizing have more tips on the tree than more individuals per species and am aiming to get at least 30-40 species on the tree by the final project.
+In order to build the phylogeny I have collected sequences from GenBank of 10 Plethodon species. 
+The sequences are from the NADH dehydrogenase subunit 2 (ND2) gene. I have had a difficult time finding and downloading different species since depending on the gene it depends on how many sequences have been done on multiple species. I am aiming prioritizing have more tips on the tree than more individuals per species and am aiming to get at least 30-40 species on the tree by the final project.
 
 I prepared the sequences for alignment in Virtual Studio Code, then I used MAFT to align all of my sequences. Once my sequences were aligned I used IQTREE to infer the phylogeny.
 
 Steps to continue to reach my goal:
 I will continue to add more species to the tree in order to infer a phylogeny that spans the whole Plethodon clade. 
-I will then check my inferences through bootsrapping and bayesian posterior probabilities. I will also see how much the topology of the tree changes depending on what mitochondrial or nuclear gene is chosen.
+I will then check my inferences through bootsrapping and bayesian posterior probabilities. 
+I will also see how much the topology of the tree changes depending on what mitochondrial or nuclear gene is chosen.
 
 Files related to Goal 1:
 Pleth_Prelim.raw.fasta
@@ -23,17 +25,20 @@ For the preliminary analysis I foucsed on the critical thermal maximum and minim
 
 I imported the tree from the cluster to R Studio and mapped a continous trait onto the tree, to check if I was able to plot the tree and that there were no issues importing it to R. 
 
-Once I had the tree I began to work on mapping a continous trait on the tree. I had to clean up the CTMin and CTMax data since not all of the species in the Tree I have collected thermal data for. So I either used values from the literature or I used values from a sister taxon (I will be collecting all of the thermal data so once I have it, I will just updated the datasheet, but I wanted to focus on trying to succefully map a continous trait onto the tree). 
+Once I had the tree I began to work on mapping a continous trait on the tree. I had to clean up the CTMin and CTMax data since not all of the species in the Tree I have collected thermal data for. 
+So I either used values from the literature or I used values from a sister taxon (I will be collecting all of the thermal data so once I have it, I will just updated the datasheet, but I wanted to focus on trying to succefully map a continous trait onto the tree). 
 
 I used the contMap function in the phytools package which estimates states at internal nodes using ML with fastAnc, and then interpolating the states along each edge. You can change different parameters with this function but I used the generic function to estimate the evolutionary history of the trait using ML. 
 
 Steps to continue to reach my goal:
 I want to map the rest of the physiological traits (thermal preference, metabolic rate, water loss rate) onto the tree so I can see any patterns that stand out to me. 
 
-I then want to test how these traits vary along different abiotic features of the species (elevation, soil temperature, air temperature). I have found two methods that can help me accomplish this: Phylogenetic Independent Contrasts (PIC) and Phylogenetic Generalized Least Squares (PGLS). If time allows it, I would also like to use a disparity through time analyses to see how these physiological traits have changed over time.
+I then want to test how these traits vary along different abiotic features of the species (elevation, soil temperature, air temperature). I have found two methods that can help me accomplish this: Phylogenetic Independent Contrasts (PIC) and Phylogenetic Generalized Least Squares (PGLS). 
+I would also like to use a disparity through time analyses to see how these physiological traits have changed over time.
 
-For my second goal, I have also imported a tree from Jetz & Pyron (2009) which does not include all of the Plethodon species that I have data for, but does allow for more taxon on the trees in the larger Plethodontidae family. This is a back-up, since there are not as many species of Plethodon who have their sequences publically available on GenBank. 
+For my second goal, I have also imported a tree from Jetz & Pyron (2009) which does not include all of the Plethodon species that I have data for, but does allow for more taxon on the trees in the larger Plethodontidae family. 
+This is a back-up, since there are not as many species of Plethodon who have their sequences publically available on GenBank. 
 
 Files related to Goal 1:
 R Script 
-ContMap Figures
+ContMap Figures (pdfs)
