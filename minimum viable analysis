@@ -1,34 +1,41 @@
-library(phytools)
-library(mvMORPH)
-library(geiger)
+My Goals for the Final Project
 
-tree<-read.tree(file="tree.tre")
-mydata<-read.csv(file="data.csv",header=TRUE,row.names=1)
-CTmin <- setNames(mydata$lnctmin, rownames(mindata))
-CTmax <- setNames(mydata$lnctmax, rownames(maxdata))
-max_BM<-mvBM(tree, CTmax, model="BM1",method="rpf")
-min_BM<-mvBM(tree, CTmin, model="BM1",method="rpf")
+1) Build a phylogeny of the Plethodon genus 
+In order to build the phylogeny I have collected sequences from GenBank of 10 Plethodon species. The sequences are from the NADH dehydrogenase subunit 2 (ND2) gene.
 
-#The values under the "rate matrix" heading are the estimates of the Brownian rate parameter.
+I prepared the sequences for alignment in Virtual Studio Code, then I used MAFT to align all of my sequences. Once my sequences were aligned I used IQTREE to infer the phylogeny.
 
-#If instead I use fitContinuous...
+Steps to continue to reach my goal:
+I will continue to add more species to the tree in order to infer a phylogeny that spans the whole Plethodon clade. 
+I will then check my inferences through bootsrapping and bayesian posterior probabilities once I have more taxon in the tree.
 
-fitmin<-fitContinuous(tree, CTmin,model = c("BM"))
-fitmax<-fitContinuous(tree, CTmax,model = c("BM"))
-fitmin
-fitmax
+Files related to Goal 1:
+Pleth_Prelim.raw.fasta
+Pleth_Prelim.fasta
+Pleth_Prelim.aligned.fasta
+All outputs from IQTREE
+sh files that ran MAFT and IQTREE on the cluster
 
-#The values under the "sigsq" heading are the estimates of the Brownian rate parameter. I expect to get almost exactly the same value using the two methods (i.e., to the third or fourth decimal place).
 
-.....................
 
-#For the multivariate space, there are almost endless options depending on exactly how I want it to look. Here's one example with CTmax and CTmin on the x and y axes and 95% C.I. ellipses drawn around categories labelled "ecomorphs" which could be referring to a column in the input file with a microhabitat discrete character. I plan to change the number of specified colors to match the number of microhabitats.
 
-library(ggplot2)
-mydata<-read.csv(file="data.csv",header=TRUE)
+2) Compare physiological traits across the tree
+My second goal was to make sure that once I am able to build the tree I can map continous data onto the tree and begin to do some comparative methods. 
+For the preliminary analysis I foucsed on the critical thermal maximum and minimum (CTMax and CTMin) for the 10 species. 
 
-p <- ggplot(mydata, aes(CTmax, CTmin, color = ecomorphs)) + geom_point(size=3) + theme_classic() + scale_color_manual(values=c('gold','darkseagreen2','firebrick','forestgreen','darkgoldenrod4','darkgoldenrod','gray88'))
+I imported the tree from the cluster to R Studio and mapped a continous trait onto the tree, to check if I was able to plot the tree and that there were no issues importing it to R. 
 
- 
+Once I had the tree I began to work on mapping a continous trait on the tree. I had to clean up the CTMin and CTMax data since not all of the species in the Tree I have collected thermal data for. So I either used values from the literature or I used values from a sister taxon (I will be collecting all of the thermal data so once I have it, I will just updated the datasheet, but I wanted to focus on trying to succefully map a continous trait onto the tree). 
 
-p + stat_ellipse(type = "norm",size=1)
+I used the contMap function in the phytools package which estimates states at internal nodes using ML with fastAnc, and then interpolating the states along each edge. You can change different parameters with this function but I used the generic function to estimate the evolutionary history of the trait using ML. 
+
+Steps to continue to reach my goal:
+I want to map the rest of the physiological traits (thermal preference, metabolic rate, water loss rate) onto the tree so I can see any patterns that stand out to me. 
+
+I then want to test how these traits vary along different abiotic features of the species (elevation, soil temperature, air temperature). I have found two methods that can help me accomplish this: Phylogenetic Independent Contrasts (PIC) and Phylogenetic Generalized Least Squares (PGLS). If time allows it, I would also like to use a disparity through time analyses to see how these physiological traits have changed over time.
+
+For my second goal, I have also imported a tree from Jetz & Pyron (2009) which does not include all of the Plethodon species have data for, but does allow for more taxon on the trees in the larger Plethodontidae family. This is a back-up, since there are not as many species of Plethodon who have their sequences publically available on GenBank. 
+
+Files related to Goal 1:
+R Script 
+ContMap Figures
