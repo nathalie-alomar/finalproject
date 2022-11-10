@@ -1,0 +1,34 @@
+library(phytools)
+library(mvMORPH)
+library(geiger)
+
+tree<-read.tree(file="tree.tre")
+mydata<-read.csv(file="data.csv",header=TRUE,row.names=1)
+CTmin <- setNames(mydata$lnctmin, rownames(mindata))
+CTmax <- setNames(mydata$lnctmax, rownames(maxdata))
+max_BM<-mvBM(tree, CTmax, model="BM1",method="rpf")
+min_BM<-mvBM(tree, CTmin, model="BM1",method="rpf")
+
+#The values under the "rate matrix" heading are the estimates of the Brownian rate parameter.
+
+#If instead I use fitContinuous...
+
+fitmin<-fitContinuous(tree, CTmin,model = c("BM"))
+fitmax<-fitContinuous(tree, CTmax,model = c("BM"))
+fitmin
+fitmax
+
+#The values under the "sigsq" heading are the estimates of the Brownian rate parameter. I expect to get almost exactly the same value using the two methods (i.e., to the third or fourth decimal place).
+
+.....................
+
+#For the multivariate space, there are almost endless options depending on exactly how I want it to look. Here's one example with CTmax and CTmin on the x and y axes and 95% C.I. ellipses drawn around categories labelled "ecomorphs" which could be referring to a column in the input file with a microhabitat discrete character. I plan to change the number of specified colors to match the number of microhabitats.
+
+library(ggplot2)
+mydata<-read.csv(file="data.csv",header=TRUE)
+
+p <- ggplot(mydata, aes(CTmax, CTmin, color = ecomorphs)) + geom_point(size=3) + theme_classic() + scale_color_manual(values=c('gold','darkseagreen2','firebrick','forestgreen','darkgoldenrod4','darkgoldenrod','gray88'))
+
+ 
+
+p + stat_ellipse(type = "norm",size=1)
