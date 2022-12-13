@@ -38,7 +38,15 @@ The data I will use to build the tree will be from mitochondrial data publicly a
 
 ## Methods
 
-The tools I used were... See analysis files at (links to analysis files).
+The tools I used were... 
+
+The sequences are from the NADH dehydrogenase subunit 2 (ND2) gene. I have had a difficult time finding and downloading different species since depending on the gene it depends on how many sequences have been done on multiple species. ND2 gene showed a lot of individuals per taxon, since the sequences are from population studies. Due to this, I am aiming prioritizing have more tips on the tree than more individuals per species and am aiming to get at least 30-40 species on the tree by the final project.
+
+I prepared the sequences for alignment in Virtual Studio Code, then I used MAFT to align all of my sequences. Once my sequences were aligned I used IQTREE to infer the phylogeny.
+
+
+
+See analysis files at (links to analysis files).
 
 ## Results
 
