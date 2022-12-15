@@ -25,7 +25,7 @@ Some guidelines and tips:
 
 OK, here we go.
 
-# Title of my project
+# Physiological Trait Variation in lungless salamanders (Plethodon)
 
 ## Introduction and Goals
 
