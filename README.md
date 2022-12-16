@@ -1,19 +1,4 @@
 # Phylogenetic Biology - Final Project
-
-
-Some guidelines and tips:
-
-
-- For information on formatting text files with markdown, see https://guides.github.com/features/mastering-markdown/ . You can use markdown to include images in this document by linking to files in the repository, eg `![GitHub Logo](/images/logo.png)`.
-
-- The project must be entirely reproducible. In addition to the results, the repository must include all the data (or links to data) and code needed to reproduce the results.
-
-- If you are working with unpublished data that you would prefer not to publicly share at this time, please contact me to discuss options. In most cases, the data can be anonymized in a way that putting them in a public repo does not compromise your other goals.
-
-- Paste references (including urls) into the reference section, and cite them with the general format (Smith at al. 2003).
-
-OK, here we go.
-
 # Physiological Trait Variation in lungless salamanders (*Plethodon*)
 
 ## Introduction and Goals
@@ -37,24 +22,31 @@ For the final step of this project critical thermal maximum (CTmax), critical th
 The tree in Figure 1 and 2 show a phylogeny built on the ND2 gene. There are three main clades in *Plethodon*: *P. cinereus*, *P. glutinosus*, and *P. wehleri/welleri* group. There is large support for the *P. glutinosus* and *P. wehleri/welleri* group to be sister to each and the *P. cinereus* group on the outside. However, in figure 1 *P. cinereus* is sister to the *P. wehleri/welleri* group. The *P. glutinosus* group has been split with some species more closely related to *P. cinereus* and *P. wehleri/welleri* than to other members of glutinosus. Figure 2 shows the bootstraps had strong support (<95) for the relationships of the three groups. However, in the relationships within has weaker support with values ranging from 60-70. 
 
 ![ND2_highlight_page-0001](https://user-images.githubusercontent.com/115576548/207989809-6a3cbec3-dbd4-432c-b8df-a0b43e67b2cf.jpg)
+Figure 1: Phylogeny of the *Plethodon* clade using the gene ND2. Red is *P. cinereus*, green is *P. glutinosus*, and blue is *P. wehleri/welleri*. Branches not colored are not apart of the eastern *Plethodon* clade. 
 
 ![ND2_bootstrap_page-0001](https://user-images.githubusercontent.com/115576548/207989833-ffd55dc6-b1e0-42d2-9cda-fdcdf2689841.jpg)
-
+Figure 2: Maximum likelihood phylogeny of the *Plethodon* clade with bootstraps shown. 
 
 The tree in figure 3 and 4 showed sequences that were from the NCBI database except for the tips labeled PshexAur, Paur, PshexTey, Pcyl, Pmet, and PmetxChl. Those samples came from sequences that I was able to produce from the lab. These include three believed hybrid species *Plethodon shermani* x *Plethodon aureolus* (Paur), *Plethodon shermani* x *Plethodon teyahalee* (PshexTey), and *Plethodon metcalfi* x *Plethodon chlorobryonis* (PmetxChl). The hybrids showed to be closely related to at least one parent species (or a species closely related to the parent since not all parent species were found in NCBI). The bootstrap support for how the sequences relate to each other show high support (<95), however how their relationships are to the rest of the species was weaker (83). The tree showed that one species (Plethodon glutinosus) was paraphyletic with individuals being shown to be closer related to other species instead of their own species. Both ND2 and the cytochrome B showed that the species that are known to be apart of each group (*P. cinereus*, *P. glutinosus*, and *P. wehleri/welleri* group) maintained those relationships. However, the cytochrome B tree showed that the *P. glutinosus* and *P. wehleri/welleri* group to be sister to each other. 
 
 ![CYTB_finalPleth_page-0001](https://user-images.githubusercontent.com/115576548/207989887-19a53512-f01e-4517-ac48-d9b779cf6ec6.jpg)
+Figure 3: Phylogeny of the *Plethodon* clade using the gene cytb. Red is *P. cinereus*, green is *P. glutinosus*, and blue is *P. wehleri/welleri*. Branches not colored are not apart of the eastern *Plethodon* clade. 
+
 ![Pleth_final_cytbtree](https://user-images.githubusercontent.com/115576548/207996925-790cc431-a628-4e23-9afa-3699559b4842.jpg)
+Figure 4: Maximum likelihood phylogeny of the *Plethodon* clade with bootstraps shown. 
 
 
 For mapping the traits on the tree, the main focus was species apart of the *glutinosus* group since those are the species that data has been collected for in the lab. Due to that, the Jetz & Pyron (2018) tree was used since it includes most of the *P. glutinosus* species. Figure 5-7 shows the three thermal traits mapped onto the tree. CTmax showed a range of 29.9C and 33.2C with the majority of species averaging around 31C. CTmin showed a range of -1.6C to 0.4C with the majority of species averaging around 0C. Tpref had a range of 16.2C to 17.9C with an average of about 17C across the clade (notably *Plethodon yonaholsee* was the only species to have a Tpref that was higher than the others). 
 
 
 ![CTMax](https://user-images.githubusercontent.com/115576548/207996513-8a165bce-0cdd-4180-9125-c495ed79cd7c.png)
+Figure 5: CTMax average value for each species. Red color indicates warmer temperatures, blue color indicates cooler temperatures. 
 
 ![CTMin](https://user-images.githubusercontent.com/115576548/207996545-b2b91c4d-7532-4502-8daf-5d4a3d8e1eb9.png)
+Figure 6: CTMin average value for each species. Red color indicates warmer temperatures, blue color indicates cooler temperatures. 
 
 ![TPref](https://user-images.githubusercontent.com/115576548/207996566-e3ce643f-ad27-4677-aac3-18c22b1d9dbf.png)
+Figure 7: TPref average value for each species. Red color indicates warmer temperatures, blue color indicates cooler temperatures. 
 
 
 ## Discussion
