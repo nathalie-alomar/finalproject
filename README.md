@@ -40,12 +40,15 @@ For mapping the traits on the tree, the main focus was species apart of the *glu
 
 
 ![CTMax](https://user-images.githubusercontent.com/115576548/207996513-8a165bce-0cdd-4180-9125-c495ed79cd7c.png)
+
 Figure 5: CTMax average value for each species. Red color indicates warmer temperatures, blue color indicates cooler temperatures. 
 
 ![CTMin](https://user-images.githubusercontent.com/115576548/207996545-b2b91c4d-7532-4502-8daf-5d4a3d8e1eb9.png)
+
 Figure 6: CTMin average value for each species. Red color indicates warmer temperatures, blue color indicates cooler temperatures. 
 
 ![TPref](https://user-images.githubusercontent.com/115576548/207996566-e3ce643f-ad27-4677-aac3-18c22b1d9dbf.png)
+
 Figure 7: TPref average value for each species. Red color indicates warmer temperatures, blue color indicates cooler temperatures. 
 
 
