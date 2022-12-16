@@ -60,8 +60,12 @@ The tree in figure 3 and 4 showed sequences that were from the NCBI database exc
 
 For mapping the traits on the tree, the main focus was species apart of the glutinosus group since those are the species that data has been collected for in the lab. Due to that, the Jetz & Pyron (2018) tree was used since it includes most of the glutinosus species. Figure 5-7 shows the three thermal traits mapped onto the tree. CTmax showed a range of 29.9C and 33.2C with the majority of species averaging around 31C. CTmin showed a range of -1.6C to 0.4C with the majority of species averaging around 0C. Tpref had a range of 16.2C to 17.9C with an average of about 17C across the clade (notably Plethodon yonaholsee was the only species to have a Tpref that was higher than the others). 
 
-[CTMin_Prelim.pdf](https://github.com/nathalie-alomar/finalproject/files/10241485/CTMin_Prelim.pdf)
-[CTMax_Prelim.pdf](https://github.com/nathalie-alomar/finalproject/files/10241488/CTMax_Prelim.pdf)
+
+![CTMax](https://user-images.githubusercontent.com/115576548/207996513-8a165bce-0cdd-4180-9125-c495ed79cd7c.png)
+
+![CTMin](https://user-images.githubusercontent.com/115576548/207996545-b2b91c4d-7532-4502-8daf-5d4a3d8e1eb9.png)
+
+![TPref](https://user-images.githubusercontent.com/115576548/207996566-e3ce643f-ad27-4677-aac3-18c22b1d9dbf.png)
 
 
 ## Discussion
