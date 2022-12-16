@@ -88,3 +88,6 @@ Vieites, D. R., Román, S. N., Wake, M. H., & Wake, D. B. (2011). A multigenic p
 
 Weisrock, D. W., Hime, P. M., Nunziata, S. O., Jones, K. S., Murphy, M. O., Hotaling, S., & Kratovil, J. D. (2018). Surmounting the large-genome “problem” for genomic data generation in salamanders. In Population genomics: wildlife (pp. 115-142). Springer, Cham.
 
+Wickham H (2016). ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York. ISBN 978-3-319-24277-4, https://ggplot2.tidyverse.org.
+
+
